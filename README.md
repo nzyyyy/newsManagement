@@ -29,29 +29,29 @@
 
 ###### 登录界面
 
-![image-20220430143216535](C:\Users\212195687\AppData\Roaming\Typora\typora-user-images\image-20220430143216535.png)
+
 
 ###### 注册界面
 
-![image-20220430143237104](C:\Users\212195687\AppData\Roaming\Typora\typora-user-images\image-20220430143237104.png)
+
 
 ###### 首页
 
-![image-20220430143323697](C:\Users\212195687\AppData\Roaming\Typora\typora-user-images\image-20220430143323697.png)
+
 
 ###### 新闻页
 
-![image-20220430143353402](C:\Users\212195687\AppData\Roaming\Typora\typora-user-images\image-20220430143353402.png)
+
 
 ###### 编辑页
 
-![image-20220430143418176](C:\Users\212195687\AppData\Roaming\Typora\typora-user-images\image-20220430143418176.png)
+
 
 ###### 管理页
 
-![image-20220430143445078](C:\Users\212195687\AppData\Roaming\Typora\typora-user-images\image-20220430143445078.png)
+
 
 ###### 审核页
 
-![image-20220430143628359](C:\Users\212195687\AppData\Roaming\Typora\typora-user-images\image-20220430143628359.png)
+
 
