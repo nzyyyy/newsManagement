@@ -115,7 +115,7 @@ public class NewInfoController {
         model.addAttribute("list", newInfoService.getListByPage(1));
         model.addAttribute("pageNum", 1);
         model.addAttribute("page", newInfoService.getPageCount());
-        return "management";
+        return "index";
     }
 
     @PreAuthorize("hasAuthority('admin')")

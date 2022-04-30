@@ -6,7 +6,7 @@ spring:
     name: newsManagement
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://59.110.216.139:3306/newsDB?allowPublicKeyRetrieval=true&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/newsDB?allowPublicKeyRetrieval=true&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: 20001210ning!!
     type: com.alibaba.druid.pool.DruidDataSource

@@ -37,7 +37,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-10">
             <table class="table">
                 <thead>
                 <tr>
@@ -52,10 +52,10 @@
                     <th scope="row" th:text="${state.index+1}"></th>
                     <td th:text="${item.title}"></td>
                     <td th:text="${item.description}"></td>
-                    <td>
+                    <td style="width: 300px">
                         <a class="btn btn-primary" th:href="@{'/new/getById/'+${item.newId}}" role="button">查看</a>
-                        <a class="btn btn-primary" th:href="@{'/new/approval/'+${item.newId}}" role="button">通过</a>
-                        <a class="btn btn-primary" th:href="@{'/new/delete/'+${item.newId}}" role="button">否决</a>
+                        <a class="btn btn-success" th:href="@{'/new/approval/'+${item.newId}}" role="button">通过</a>
+                        <a class="btn btn-warning" th:href="@{'/new/delete/'+${item.newId}}" role="button">否决</a>
                     </td>
                 </tr>
                 </tbody>
