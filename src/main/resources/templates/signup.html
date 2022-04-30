@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册页</title>
+  <link rel = "stylesheet" th:href = "@{/css/bootstrap.min.css}"/>
+  <link rel="stylesheet"  th:href="@{/css/main.css}">
+  <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a th:href="@{/}" class="navbar-brand"></a>
+      </div>
+      <label id="toggle-label" class="visible-xs-inline-block" for="toggle-checkbox">MENU</label>
+      <input class="hidden" id="toggle-checkbox" type="checkbox">
+      <div class="hidden-xs">
+        <ul class="nav navbar-nav">
+          <li class="active"><a th:href="@{/}">首页</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a th:href="@{/login}">登录</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container container-small">
+    <h1>注册</h1>
+    <form th:action="@{/user/register}" method="post">
+      <div th:if="${exist}">
+        <div class="alert alert-danger">该邮箱已被注册</div>
+      </div>
+      <div class="form-group">
+        <label>邮箱</label>
+        <input type="email" name="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>密码</label>
+        <input type="password" name="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary btn-block" type="submit">注册</button>
+      </div>
+      <div class="form-group">
+        注册即代表您同意服务条款
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

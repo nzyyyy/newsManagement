@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <link rel = "stylesheet" th:href = "@{/css/bootstrap.min.css}"/>
+  <link rel="stylesheet"  th:href="@{/css/main.css}">
+  <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="hidden-xs">
+        <ul class="nav navbar-nav">
+          <li class="active"><a th:href="@{/}">首页</a></li>
+          <li><a th:href="@{/new/management}">管理</a></li>
+          <li ><a  th:href="@{/new/showCreate}">发布新闻</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a th:href="@{/logout}">注销</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+
+      </div>
+      <div class="col-sm-7">
+        <div th:each="item : ${list}" class="news-list">
+          <div class="news-list-item clearfix">
+            <div class="col-xs-7">
+              <a th:href="@{'/new/getById/'+${item.newId}}" class="title" ><span th:text="${item.title}"></span></a>
+              <span th:text="${item.description}"></span>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination" >
+            <li th:each="i:${#numbers.sequence(1,page)}" class="page-item" th:classappend="${i == pageNum} ? 'active' : '' " >
+              <a class="page-link" th:href="@{'/?'+'page='+${i}}" th:text="${i}"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

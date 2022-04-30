@@ -1,0 +1,30 @@
+
+server:
+  port: 8080
+spring:
+  application:
+    name: newsManagement
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://59.110.216.139:3306/newsDB?allowPublicKeyRetrieval=true&useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 20001210ning!!
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: true
+    check-template: true
+    enabled: true
+    encoding: UTF-8
+    excluded-view-names:
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    check-template-location: true
+    servlet:
+      content-type: text/html
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+
+
+

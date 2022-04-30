@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>新建页</title>
+    <link rel = "stylesheet" th:href = "@{/css/bootstrap4.min.css}"/>
+    <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{/js/bootstrap4.min.js}"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">导航</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/}">首页<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/logout}">注销</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-7">
+            <form th:action="@{/new/create}" method="post">
+                <div class="form-group">
+                    <label for="title">新闻标题</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="请输入新闻标题">
+                </div>
+                <div class="form-group">
+                    <label for="description">新闻简介</label>
+                    <input type="text" class="form-control" id="description" name="description" placeholder="请输入新闻简介">
+                </div>
+                <div class="form-group">
+                    <label for="content">新闻内容</label>
+                    <textarea class="form-control" id="content" rows="5"  name="content" placeholder="请输入新闻内容"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
