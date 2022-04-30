@@ -29,29 +29,29 @@
 
 ###### 登录界面
 
-
+![1](https://raw.githubusercontent.com/nzyyyy/newsManagement/master/png/1.png)
 
 ###### 注册界面
 
-
+![2](https://raw.githubusercontent.com/nzyyyy/newsManagement/master/png/2.png)
 
 ###### 首页
 
-
+![3](https://raw.githubusercontent.com/nzyyyy/newsManagement/master/png/3.png)
 
 ###### 新闻页
 
-
+![4](https://raw.githubusercontent.com/nzyyyy/newsManagement/master/png/4.png)
 
 ###### 编辑页
 
-
+![5](https://raw.githubusercontent.com/nzyyyy/newsManagement/master/png/5.png)
 
 ###### 管理页
 
-
+![6](https://raw.githubusercontent.com/nzyyyy/newsManagement/master/png/6.png)
 
 ###### 审核页
 
-
+![7](https://raw.githubusercontent.com/nzyyyy/newsManagement/master/png/7.png)
 
